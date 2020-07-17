@@ -6,12 +6,12 @@ webhook_url:
 sections:
 - type: directory
   path: content
-  label: Pages
+  label: Strony
   create: all
   match: "*"
 - type: directory
   path: content/posts
-  label: Posts
+  label: Posty
   create: all
   match: "**/*"
 upload_dir: static/uploads
