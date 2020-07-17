@@ -1,0 +1,65 @@
+baseURL = "https://blog.mikolajkazmierczak.ml/"
+languageCode = "pl"
+title = "Mikołaj Kaźmierczak - blog"
+theme = "notepadium"
+copyright = "© 2020 Mikołaj Kaźmierczak"
+
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+
+# Enable Disqus
+disqusShortname = "mikolaj-kazmierczak-blog"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = false  # enable raw HTML in Markdown
+
+[params]
+style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = ""  # if unset, default is "2006-01-02"
+logo = "https://mikolajkazmierczak.ml/images/avatar.png"  # if you have a logo png
+slogan = ""
+license = ""  # CC License
+fullRss = true # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+
+[params.comments]
+enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "prismjs"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode-dark"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.share]
+enable = false
+addThisId = ""
+inlineToolId = ""
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = "O mnie"
+url = "/about"
+
+[[params.nav.custom]]
+title = "Homepage"
+url = "https://mikolajkazmierczak.ml"
+
+[[params.nav.custom]]
+title= "RSS/Atom"
+url= "/index.xml"
